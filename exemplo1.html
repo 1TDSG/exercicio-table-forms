@@ -3,10 +3,82 @@
    <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width,initial-scale=1">
-     <title>PAGINA</title>
+     <title>TABELAS</title>
+
+     <style media="screen">
+        #tabelinha, th, td{
+          border: 1px solid #ccc;
+          font-size: 30px;
+          border-collapse: collapse;
+          text-align: center;
+          color: #fff;
+          background-color: #202420;
+        }
+        #tabelinha{ 
+          width: 100%;
+          height: 100%;
+        }
+        #tabelinha th{
+          height: 50px;
+        }
+
+        #tabelinha td{
+          height: 10px;
+          vertical-align: bottom;
+        }
+
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+
+        tr:HOVER{
+          background-color: #c4babc ;
+        }
+
+        tr:nth-child(even){
+          background-color: #b0c4ba;
+        }
+
+
+
+     </style>
+
    </head>
    <body>
      <div id="container">
+
+       <table class="tabelas" id="tabelinha">
+         <tr>
+           <th>id</th>
+           <th>modelo</th>
+           <th>cor</th>
+           <th>marca</th>
+           <th>ano</th>
+         </tr>
+         <tr>
+           <td>1</td>
+           <td>sport</td>
+           <td>vermelho</td>
+           <td>ferrari</td>
+           <td>2018</td>
+         </tr>
+         <tr>
+           <td>2</td>
+           <td>passeio</td>
+           <td>azul</td>
+           <td>mercedes benz</td>
+           <td>2019</td>
+         </tr>
+         <tr>
+           <td>3</td>
+           <td>utilitário</td>
+           <td>rosa</td>
+           <td>suzuki</td>
+           <td>2020</td>
+         </tr>
+       </table>
+
      </div>
    </body>
 </html>
