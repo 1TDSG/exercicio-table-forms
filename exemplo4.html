@@ -1,0 +1,60 @@
+<!Doctype html>
+  <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <title>FORM</title>
+
+     <style media="screen">
+
+        #frm01{
+          font-family: Consolas,sans-serif;
+          font-size: 30px;
+          width: 50%;
+          margin: auto;
+          }
+        #frm01 input[type=text],input[type=password]{
+          padding: 2%;
+          width: 50%;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid #0000ff;
+          border-radius: 4px;
+          background-color: #8c9e99;
+          color: #ffffff;
+          display: block;
+        }
+
+        #frm01 input[type="submit"]{
+          width: 100px;
+          height: 30px;
+          border: 2px solid #cccccc;
+
+        }
+     </style>
+      </head>
+      <body>
+        <div id="container">
+          <div>
+            <form action="exemplo1.html" method="get" id="frm01" onsubmit="alert('NOME USER : ' +idNmUser.value+'\n' +'PASS : '+idPassUser.value)">
+              <fieldset>
+                <legend>LOGIN</legend>
+                <div>
+                  <label for="idNmUser">Nome do Usuário :</label>
+                  <input type="text" name="txtNmUser" id="idNmUser" placeholder="Digite seu usuário" required="required">
+                </div>
+                <div>
+                  <label for="idPassUser">Senha :</label>
+                  <input type="password" name="txtPassUser" id="idPassUser" placeholder="Digite sua senha" required="required">
+                </div>
+                <div>
+                  <input type="submit" value="LOGIN">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+
+        </div>
+   </body>
+</html>
